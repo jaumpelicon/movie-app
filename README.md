@@ -1,7 +1,7 @@
 # movie-app
 Created movie list app with Kotlin.
 
-I developed this movie project as onboarding at Jera Apps to learn more about using Kotlin with API request and MVVM architecture to evolve personally and professionally.
+I developed this movie project as an onboarding at Jera Apps to learn more about using Kotlin with API request and MVVM architecture to evolve personally and professionally.
 
 I used this API "https://www.themoviedb.org/documentation/api?language=pt-BR"
 
