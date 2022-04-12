@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="main_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="title_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="search_text_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="title_home">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">32dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.searchmovie.SearchMoviesFragment">
+
+        <CheckBox
+            android:id="@+id/checkboxAdultFilter"
+            style="@style/main_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/checkbok_adult_filter" />
+
+        <EditText
+            android:id="@+id/movieNameEditText"
+            android:layout_width="325dp"
+            android:layout_height="61dp"
+            android:layout_below="@id/checkboxAdultFilter"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/searchMovieButton"
+            android:background="@drawable/search_field"
+            android:hint="@string/hintMovie"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/off_white" />
+
+
+        <ImageView
+            android:id="@+id/searchMovieButton"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/checkboxAdultFilter"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/search_button2" />
+
+        <TextView
+            android:id="@+id/textFeedbackSearch"
+            style="@style/main_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageErrorSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBarSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchMovieButton"
+            android:layout_marginTop="16dp"
+            android:indeterminateDrawable="@drawable/progress_bar_design"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textProgressBarSearch"
+            style="@style/main_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBarSearch"
+            android:layout_centerHorizontal="true"
+            android:text="@string/feedback_search_one_movie"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageErrorSearch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/searchMovieButton"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_baseline_error_24"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchMovieButton"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>

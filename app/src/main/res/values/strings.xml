@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">MovieAPP</string>
+    <string name="itemHome">Home</string>
+    <string name="itemSearch">Pesquisa</string>
+    <string name="itemRatedMovie">Avaliados</string>
+    <string name="itemPopularMovie">Populares</string>
+    <string name="itemUpcomingMovie">Por Vir</string>
+    <string name="feedback_search">Buscando Filmes</string>
+    <string name="feedback_null">Lista de Filmes Vazia</string>
+    <string name="feedback_error">Erro ao Buscar Filmes</string>
+    <string name="feedback_search_one_movie">Buscando Filme</string>
+    <string name="feedback_search_null">Filme não encontrado</string>
+    <string name="feedback_search_error">Erro ao Buscar Filme</string>
+    <string name="button_details">Ver detalhes</string>
+    <string name="realease_date">Data de Lançamento:</string>
+    <string name="string_rating">Avaliação:</string>
+    <string name="text_date">Data de lançamento:</string>
+    <string name="toolbar_popular">Filmes Populares</string>
+    <string name="toolbar_rated">Filmes Mais Bem Avaliados</string>
+    <string name="toolbar_upcoming">Filmes Por Vir</string>
+    <string name="toolbar_favorites">Filmes Favoritos</string>
+    <string name="toolbar_details">Detalhes</string>
+    <string name="toolbar_home">Home</string>
+    <string name="toolbar_search">Pesquisar Filmes</string>
+    <string name="label_rating_details">Avaliação:</string>
+    <string name="search">Pesquisar</string>
+    <string name="hintMovie">Digite aqui o nome do filme</string>
+    <string name="welcome">Damos boas-vindas ao nosso app!</string>
+    <string name="homeText">Aqui você pode navegar por três menus principais e ainda acessar um menu de busca de filmes!
+        <br />Esse app foi construído pelo grupo 3 - INDUSTRY_BOYS.KT - utilizando a API do "The Movies DB".
+        Esperamos que sua experiência seja satisfatória.
+    </string>
+    <string name="checkbok_adult_filter">Conteúdo para crianças</string>
+    <string name="toast_movie_null">Digite o nome do Filme</string>
+    <string name="text_add_favorites">Adicionar aos Favoritos</string>
+    <string name="movie_exist_db">Filme já adicionado</string>
+    <string name="movie_not_exist_db">Filme Adicionado</string>
+    <string name="dialog_title">Deletar tudo</string>
+    <string name="dialog_message">Deseja deletar todos os filmes?</string>
+    <string name="dialog_title2">Remover filme?</string>
+    <string name="dialog_message2">Filme ja adicionado deseja remover filme?</string>
+    <string name="dialog_negative">Não</string>
+    <string name="dialog_positive">Sim</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete_all_movies">Deletar Tudo</string>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".ui.details.DetailsMovieFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/movieBackdropDetails"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/backdropGuideline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/moviePosterCard"
+                android:layout_width="108dp"
+                android:layout_height="162dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/backdropGuideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/backdropGuideline">
+
+                <ImageView
+                    android:id="@+id/moviePosterDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/background_color" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/backdropGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.36" />
+
+            <TextView
+                android:id="@+id/movieTitleDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/moviePosterCard"
+                app:layout_constraintTop_toBottomOf="@+id/backdropGuideline" />
+
+            <TextView
+                android:id="@+id/movieDateTextDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#757575"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/movieTitleDetails"
+                app:layout_constraintTop_toBottomOf="@+id/movieTitleDetails" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/movie_poster_title_barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="ratingBar,buttonAddFavorite" />
+
+            <TextView
+                android:id="@+id/movieSynopsisTextDetails"
+                style="@style/main_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movie_poster_title_barrier" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/white"
+                android:progressTint="#FFC107"
+                app:layout_constraintEnd_toEndOf="@+id/moviePosterCard"
+                app:layout_constraintStart_toStartOf="@+id/moviePosterCard"
+                app:layout_constraintTop_toBottomOf="@+id/moviePosterCard" />
+
+            <ImageView
+                android:id="@+id/buttonAddFavorite"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_baseline_playlist_add_24"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/movieDateTextDetails"
+                app:layout_constraintTop_toBottomOf="@+id/movieDateTextDetails" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

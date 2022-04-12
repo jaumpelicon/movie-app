@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/icon_home"
+        android:enabled="true"
+        android:title=""/>
+    <item
+        android:id="@+id/searchMoviesFragment"
+        android:icon="@drawable/icon_search"
+        android:enabled="true"
+        android:title=""/>
+    <item
+        android:id="@+id/ratedMoviesFragment"
+        android:icon="@drawable/icon_filmes_bem_avaliados"
+        android:enabled="true"
+        android:title=""/>
+    <item
+        android:id="@+id/popularMoviesFragment"
+        android:icon="@drawable/icon_filmes_populares"
+        android:enabled="true"
+        android:title=""/>
+    <item
+        android:id="@+id/upcomingMoviesFragment"
+        android:icon="@drawable/icon_filmes_por_vir"
+        android:enabled="true"
+        android:title=""/>
+
+
+</menu>

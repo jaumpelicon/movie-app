@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarMovie"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/background_card"
+            android:theme="@style/toolbar_theme"
+            app:title="Home"
+            app:titleTextColor="@color/white" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainer"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomNav"
+            android:layout_below="@id/toolbarMovie"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:itemBackground="@color/menus_color"
+            app:itemIconTint="#fff"
+            app:itemTextColor="#fff"
+            app:menu="@menu/menu_nav" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/background_card"
+    app:cardCornerRadius="7dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/moviePosterImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="350dp"
+            android:maxHeight="350dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/movieTitleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text=""
+            style="@style/title_text"
+            app:layout_constraintStart_toEndOf="@id/moviePosterImage"
+            app:layout_constraintTop_toTopOf="@id/moviePosterImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/moviePosterImage"/>
+
+        <TextView
+            android:id="@+id/labelAvaliacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_rated"
+            android:drawablePadding="5dp"
+            android:text="@string/string_rating"
+            style="@style/main_text"
+            app:layout_constraintStart_toStartOf="@+id/movieTitleText"
+            app:layout_constraintTop_toBottomOf="@+id/movieTitleText" />
+
+        <TextView
+            android:id="@+id/textAvaliacao"
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            style="@style/main_text"
+            app:layout_constraintEnd_toEndOf="@+id/movieTitleText"
+            app:layout_constraintStart_toEndOf="@+id/labelAvaliacao"
+            app:layout_constraintTop_toTopOf="@+id/labelAvaliacao" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

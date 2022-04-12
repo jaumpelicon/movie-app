@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".ui.HomeFragment">
+
+        <TextView
+            android:id="@+id/welcomeTitle"
+            style="@style/title_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:textSize="35dp"
+            android:text="@string/welcome"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/homeText"
+            style="@style/main_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/welcomeTitle"
+            android:layout_marginTop="40dp"
+            android:textSize="18dp"
+            android:text="@string/homeText"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/wifiErrorImage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:src="@drawable/ic_baseline_wifi_off_24"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textWifiError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>

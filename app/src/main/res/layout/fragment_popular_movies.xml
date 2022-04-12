@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.popularmovies.PopularMoviesFragment">
+
+        <ProgressBar
+            android:id="@+id/progressBarPopular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/progress_bar_design" />
+
+        <TextView
+            android:id="@+id/textProgressBarPopular"
+            style="@style/main_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBarPopular"
+            android:layout_centerHorizontal="true"
+            android:text="@string/feedback_search" />
+
+        <TextView
+            android:id="@+id/popularMoviesTextFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageErrorPopular"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageErrorPopular"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_baseline_error_24" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPopular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>
