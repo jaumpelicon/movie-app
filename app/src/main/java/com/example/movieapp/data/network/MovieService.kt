@@ -1,6 +1,8 @@
 package com.example.movieapp.data.network
 
 import com.example.movieapp.data.model.MovieResponse
+import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -36,11 +38,18 @@ interface MovieService {
         private const val apiKey = "50ee3323cd11495d7ba94af454c1d1b0"
         private const val language = "pt-BR"
         private val retrofitService: MovieService by lazy {
+            val logging = HttpLoggingInterceptor()
+            logging.setLevel(HttpLoggingInterceptor.Level.BASIC)
+            val httpClient = OkHttpClient.Builder()
+            httpClient.addInterceptor(logging)
 
             val retrofit = Retrofit.Builder()
                 .baseUrl("https://api.themoviedb.org/3/")
                 .addConverterFactory(GsonConverterFactory.create())
+                .client(httpClient.build())
                 .build()
+
+
 
             retrofit.create(MovieService::class.java)
         }
