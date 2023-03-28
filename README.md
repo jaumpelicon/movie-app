@@ -1,5 +1,9 @@
 # movie-app
-Created movie list app with Kotlin.
+
+Created movie list app with Kotlin and publish into store.
+
+![image](https://user-images.githubusercontent.com/42846276/228371481-ab68a727-e0ad-4b13-80a1-f6a19e75e11b.png)
+
 
 I developed this movie project as an onboarding at Jera Apps to learn more about using Kotlin with API request and MVVM architecture to evolve personally and professionally.
 
